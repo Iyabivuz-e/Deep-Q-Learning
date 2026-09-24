@@ -10,7 +10,5 @@ class DQN(nn.Module):
         self.fc2 = nn.Linear(hidden_layer_dim, action_dim) # Takes hidden layer into output action layer
         
     def forward(self, x):
-        print(f"======= States before: {x.shape}")
         x = F.relu(self.fc1(x))
-        print(f"======= States after: {x.shape}")
         return self.fc2(x)
