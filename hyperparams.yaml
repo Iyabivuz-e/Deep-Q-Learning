@@ -7,5 +7,5 @@ frozenlake:
   epsilon_min       : 0.1
   network_sync_rate : 10
   learning_rate     : 0.001
-  discounted_factor : 0.95
-  episodes          : 200
+  discounted_factor : 0.99
+  episodes          : 500

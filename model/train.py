@@ -62,7 +62,7 @@ def train(
                         action = policy_dqn(state_to_dqn_input(current_state, num_states, device=device)).argmax()                        
 
                 new_state, reward, terminated, truncated, info = env.step(action.item()) 
-                print(f"new state: {new_state} || reward: {reward} ")
+                # print(f"new state: {new_state} || reward: {reward} ")
                 
                 new_state = torch.tensor(new_state, dtype=torch.float, device=device)
                 reward = torch.tensor(reward, dtype=torch.float, device=device)

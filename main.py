@@ -8,8 +8,6 @@ from model.train import train
 
 device = "cuda" if torch.cuda.is_available() else "mps" if torch.mps.is_available else "cpu"
 
-print(f"Device: {device}")
-
 
 class Agent:
     def __init__(self, hyperparams_set, render=True):
@@ -52,5 +50,5 @@ class Agent:
 
 if __name__ == "__main__":
     agent = Agent("frozenlake", render=True)
-    agent.run()
+    # agent.run()
     test(episodes=4, device=device, render=True)
