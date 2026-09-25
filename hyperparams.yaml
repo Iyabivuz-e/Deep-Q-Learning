@@ -4,7 +4,8 @@ frozenlake:
   mini_batch_size   : 32
   epsilon_init      : 1
   epsilon_decay     : 0.9995
-  epsilon_min       : 0.5
-  network_sync_rate : 20
+  epsilon_min       : 0.1
+  network_sync_rate : 10
   learning_rate     : 0.001
-  discounted_factor : 0.01
+  discounted_factor : 0.95
+  episodes          : 200
